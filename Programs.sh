@@ -5,6 +5,7 @@ packages=(
   firefox
   kdeconnect
   torbrowser-launcher
+  vesktop
 )
 
 # Loop through each package and install using yay
