@@ -9,6 +9,8 @@ packages=(
   obsidian
   uv
   spotify
+  vlc
+  libreoffice
 )
 
 # Loop through each package and install using yay
