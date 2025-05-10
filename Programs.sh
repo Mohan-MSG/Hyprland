@@ -8,6 +8,7 @@ packages=(
   vesktop
   obsidian
   uv
+  spotify
 )
 
 # Loop through each package and install using yay
