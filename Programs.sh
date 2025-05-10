@@ -6,6 +6,7 @@ packages=(
   kdeconnect
   torbrowser-launcher
   vesktop
+  obsidian
 )
 
 # Loop through each package and install using yay
