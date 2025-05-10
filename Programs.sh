@@ -7,6 +7,7 @@ packages=(
   torbrowser-launcher
   vesktop
   obsidian
+  uv
 )
 
 # Loop through each package and install using yay
