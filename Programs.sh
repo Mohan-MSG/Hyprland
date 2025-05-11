@@ -11,6 +11,7 @@ packages=(
   spotify
   vlc
   libreoffice
+  nemo
 )
 
 # Loop through each package and install using yay
