@@ -11,7 +11,9 @@ packages=(
   spotify
   vlc
   libreoffice
-  nemo
+  thunar
+  whatsdesk
+  telegram-desktop-bin
 )
 
 # Loop through each package and install using yay
