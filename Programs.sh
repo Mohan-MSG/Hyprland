@@ -14,6 +14,7 @@ packages=(
   thunar
   whatsdesk
   telegram-desktop-bin
+  vlc
 )
 
 # Loop through each package and install using yay
