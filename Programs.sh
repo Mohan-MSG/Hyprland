@@ -3,7 +3,6 @@
 # Define the list of packages to install
 packages=(
   # Web Browsers
-  brave-bin
   torbrowser-launcher
   
   # Media
@@ -11,23 +10,32 @@ packages=(
   obs-studio
   gimp
   inkscape
+  gwenview
   
   # Office
   libreoffice-fresh
   
   # System Utilities
   htop
+  btop
   duf
+  dust
   fastfetch
   ranger
   stacer
   gparted
   gnome-disk-utility
+  zoxide
+  ntfs-3g
   
   # Development & Productivity
   neovim
   git
-  logseq-desktop-bin
+  obsidian
+  windsurf
+  rustup
+  uv
+  lazygit
   
   # Communication
   whatsapp-nativefier
@@ -71,6 +79,17 @@ for package in "${packages[@]}"; do
     fi
   fi
 done
+
+# Install Rust if rustup was installed
+if command -v rustup &> /dev/null; then
+  read -p "Do you want to install the latest stable Rust toolchain? [y/N] " -n 1 -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "Installing Rust..."
+    rustup default stable
+    echo "Rust has been installed!"
+  fi
+fi
 
 # Install Oh My Zsh if zsh was installed
 if command -v zsh &> /dev/null; then
