@@ -6,7 +6,7 @@ echo "[*] Downloading BlackArch strap.sh script..."
 curl -O https://blackarch.org/strap.sh
 
 echo "[*] Verifying strap.sh..."
-EXPECTED_HASH="86eb4efb68918db0c143f1559682170ffbc4b6cd"
+EXPECTED_HASH="e26445d34490cc06bd14b51f9924debf569e0ecb"
 DOWNLOADED_HASH=$(sha1sum strap.sh | awk '{print $1}')
 
 if [ "$EXPECTED_HASH" != "$DOWNLOADED_HASH" ]; then
